@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="db">
+  <DataContextMoniker Name="/dbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4c8beaab-8d8d-4208-8079-d85d6692f724" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87d1ba8a-1e56-4d93-8493-f3394c7e3055" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d1c9a9c-1f9d-45cb-b5a1-5ec1ecce0459" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dbDataContext/WhatsAppNumber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae92ff0a-ff37-43ef-936f-868763472c2a" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbDataContext/Country/Country_WhatsAppNumber" />
+      <nodes>
+        <classShapeMoniker Id="4c8beaab-8d8d-4208-8079-d85d6692f724" />
+        <classShapeMoniker Id="1d1c9a9c-1f9d-45cb-b5a1-5ec1ecce0459" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
