@@ -10,16 +10,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Telerik.WinControls.UI;
 using XBeamDataLayer.PhoneNumber;
+using XBeamDataLayer;
 namespace XpremaBeam.WhatsNumbers
 {
     public partial class frmGenerateNumber : RadForm
     {
         WhatsAppNumberCmd cmd = new WhatsAppNumberCmd();
         CountryCmd cmdx = new CountryCmd();
+     
         public frmGenerateNumber()
         {
             InitializeComponent();
             cmd.OnChangeValue += cmd_OnChangeValue;
+            DatabaseBase.OnConnectionChange += DatabaseBase_OnConnectionChange;
+        }
+
+        void DatabaseBase_OnConnectionChange(object sender, string status)
+        {
+            lblConnection.Text = status;
         }
 
         void cmd_OnChangeValue(object sender, string process, string msg)
@@ -40,12 +48,12 @@ namespace XpremaBeam.WhatsNumbers
             //-----------
             for (long i = StartNumber; i <= StopNumber; i++)
             {
-              /* this.Invoke((MethodInvoker)delegate {
+              this.Invoke((MethodInvoker)delegate {
                     radProgressBar1.Text = i.ToString();
                     radProgressBar1.Value1++;
                     Countrykey = txtCountryKey.Text;
                     country = int.Parse(CountrycomboBox.SelectedValue.ToString());
-                });*/
+                });
                 cmd.AddNumber(new XBeamDataLayer.WhatsAppNumber() { 
                  ContactName="-",
                   CountryID = country,

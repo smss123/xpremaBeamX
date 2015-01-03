@@ -26,7 +26,8 @@ namespace XBeamDataLayer.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SAMER\\SQL2008;Initial Catalog=xpremaBeam;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SEZEROFFICE-PC\\SQL2008;Initial Catalog=xpremaBeam;Integrated Security" +
+            "=True")]
         public string xpremaBeamConnectionString {
             get {
                 return ((string)(this["xpremaBeamConnectionString"]));

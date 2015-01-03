@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="xpremaBeam" Class="dbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=SAMER\SQL2008;Initial Catalog=xpremaBeam;Integrated Security=True" SettingsObjectName="XBeamDataLayer.Properties.Settings" SettingsPropertyName="xpremaBeamConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SEZEROFFICE-PC\SQL2008;Initial Catalog=xpremaBeam;Integrated Security=True" SettingsObjectName="XBeamDataLayer.Properties.Settings" SettingsPropertyName="xpremaBeamConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="WhatsPhone.Country" Member="Countries">
     <Type Name="Country">
       <Column Name="CountryName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />

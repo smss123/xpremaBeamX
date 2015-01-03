@@ -14,7 +14,7 @@
         <elementListCompartment Id="ae92ff0a-ff37-43ef-936f-868763472c2a" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/dbDataContext/Country/Country_WhatsAppNumber" />
       <nodes>
         <classShapeMoniker Id="4c8beaab-8d8d-4208-8079-d85d6692f724" />
